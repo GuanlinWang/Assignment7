@@ -1,7 +1,7 @@
 #include "linkedlist.h"
 
 linkedlist::linkedlist() {
-    head=nullptr;
+
 }
 
 linkedlist::~linkedlist() {
@@ -16,9 +16,11 @@ int linkedlist::count() {
 void linkedlist::addToFront(int n) {
     head=new node;
     head->data=n;
+    cout<<head->data<<" ";
     head->next=nullptr;
     head=head->next;
-    
+
+
 }
 
 double linkedlist::average() {
@@ -28,11 +30,12 @@ double linkedlist::average() {
 
 int linkedlist::sum() {
     // RECURSIVE
+    
     return 0;
 }
 
 void linkedlist::writeInorder(string & file) {
-    
+
 }
 
 void linkedlist::writeReversed(string & file) {
